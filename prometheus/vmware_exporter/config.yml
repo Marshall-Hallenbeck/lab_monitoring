@@ -1,0 +1,15 @@
+default:
+    vsphere_host: "VSPHERE_IP"
+    vsphere_user: "administrator@vsphere.local"
+    vsphere_password: "PASSWORD"
+    ignore_ssl: True
+    specs_size: 5000
+    fetch_custom_attributes: True
+    fetch_tags: True
+    fetch_alarms: True
+    collect_only:
+        vms: True
+        vmguests: True
+        datastores: True
+        hosts: True
+        snapshots: True
